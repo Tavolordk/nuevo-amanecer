@@ -241,10 +241,8 @@
 
 /* Para pantallas más pequeñas como móviles */
 @media (max-width: 991px) {
-    .brand-title img {
-        max-width: 200px; /* Ajusta el tamaño para móviles y tablets */
-        height: auto;
-        margin: 0 auto; /* Centra la imagen si es necesario */
+    .header-top {
+display: none;
     }
 }
 
@@ -321,29 +319,30 @@
 
 <!-- Header Top -->
 <div class="header-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center px-4"> <!-- Cambié a container-fluid y añadí padding -->
+    <div class="container-fluid d-flex justify-content-between align-items-center px-4">
         <!-- Left Side: Teléfono -->
-        <div class="left-side">
+        <div class="left-side col-4 text-start">
             <a href="tel:5561603335" class="d-flex align-items-center mt-4">
-                <i class="fas fa-phone fa-lg"></i> 
+                <i class="fas fa-phone fa-lg"></i>
                 <span class="ms-2 fs-4 text-style-1">5561603335</span>
             </a>
         </div>
-        
+
         <!-- Imagen centrada (logo) -->
-        <div class="brand-title text-center">
-            <img src="img/image 20.png" alt="logo" class="img-fluid">        
+        <div class="brand-title col-4 text-center">
+            <img src="img/image 20.png" alt="logo" class="img-fluid mx-auto d-block">
         </div>
 
         <!-- Right Side: Contacto -->
-        <div class="right-side">
-            <a href="#" class="d-flex align-items-center mt-4">
-                <i class="fas fa-envelope fa-lg"></i> 
+        <div class="right-side col-4 text-end">
+            <a href="#" class="d-flex align-items-center justify-content-end mt-4">
+                <i class="fas fa-envelope fa-lg"></i>
                 <span class="ms-2 fs-4 text-style-1">Contáctanos</span>
             </a>
         </div>
     </div>
 </div>
+
 
 <!-- Navbar Main -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-main">
