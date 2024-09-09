@@ -231,19 +231,20 @@
 .navbar-nav .nav-link:hover {
     color: #a65e28;
 }
-/* Estilos para escritorio */
+/* Para pantallas grandes como escritorio */
 @media (min-width: 992px) {
     .brand-title img {
-        max-width: 500px; /* Tamaño de la imagen en pantallas de escritorio */
-        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 500px; /* Ajusta el tamaño máximo para pantallas de escritorio */
+        height: auto;
     }
 }
 
-/* Estilos para tablets y móviles */
+/* Para pantallas más pequeñas como móviles */
 @media (max-width: 991px) {
     .brand-title img {
-        max-width: 100%; /* La imagen ocupará el 100% del ancho disponible en pantallas más pequeñas */
-        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 200px; /* Ajusta el tamaño para móviles y tablets */
+        height: auto;
+        margin: 0 auto; /* Centra la imagen si es necesario */
     }
 }
 
