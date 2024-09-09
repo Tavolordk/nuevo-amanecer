@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  
+  <!-- Meta tags SEO -->
+  <meta name="description" content="Mariachi Nuevo Amanecer ofrece música tradicional para bodas, serenatas y eventos especiales en CDMX y EDOMEX. Contáctanos para una experiencia inolvidable."/>
+  <meta name="keywords" content="mariachi, mariachi en CDMX, mariachi en EDOMEX, música para bodas, serenatas, mariachi para eventos, Mariachi Nuevo Amanecer"/>
+  <meta name="robots" content="index, follow"/>
+  
+  <!-- Meta tags para redes sociales -->
+  <meta property="og:title" content="Mariachi Nuevo Amanecer - Música para bodas y eventos especiales"/>
+  <meta property="og:description" content="Disfruta de la mejor música tradicional mexicana con Mariachi Nuevo Amanecer. Servicios en CDMX y EDOMEX."/>
+  <meta property="og:image" content="URL_de_tu_imagen_de_cabecera.jpg"/>
+  <meta property="og:url" content="https://www.tusitioweb.com"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Mariachi Nuevo Amanecer"/>
+  <meta name="twitter:description" content="Contrata los servicios del mejor mariachi en CDMX y EDOMEX. Contacto inmediato y servicios para todo tipo de eventos."/>
+  <meta name="twitter:image" content="URL_de_tu_imagen_de_twitter.jpg"/>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.tusitioweb.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">  
+<title>
+   Mariachi Nuevo Amanecer - Música para bodas y eventos en CDMX
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #f5f2e9;
+            font-family: Arial, sans-serif;
+        }
+            /* Botón flotante */
+    .contact-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #A7754C;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .contact-button i {
+        font-size: 20px;
+    }
+
+    .contact-button:hover {
+        background-color: #c38c5a;
+    }
+
+    /* Estilos para la galería en carrusel */
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        background-color: #EAD0A3;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer .social-icons i {
+        font-size: 24px;
+        margin: 0 10px;
+        color: #555;
+    }
+
+    .footer .social-icons i:hover {
+        color: #a65e28;
+    }
+        .header-top {
+            background-color: #A7754C; /* Color marrón */
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .header-top .navbar-brand, .header-top a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .text-style-1{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            color: #EAD0A3;
+        }
+
+        .text-style-2{
+            font-family: "Didact Gothic", sans-serif;
+            font-optical-sizing: auto;
+            color: #E9E4DB;
+        }
+
+        .navbar-main {
+            background-color: #000;
+            padding: 10px 0;
+        }
+
+        .navbar-main .nav-link {
+            color: #fff;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .navbar-main .nav-link:hover {
+            color: #a65e28;
+        }
+
+        .brand-title {
+            font-size: 2rem;
+            font-family: 'Cinzel', serif; /* Personaliza la fuente si lo deseas */
+        }
+
+        .navbar-brand {
+            font-family: 'Western', cursive;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los elementos */
+    align-items: center;
+}
+
+.nav-item {
+    flex-grow: 1; /* Los elementos ocuparán el mismo espacio */
+    text-align: center; /* Centra el contenido dentro de cada item */
+}
+
+.nav-link {
+    font-size: 1.1rem; /* Asegura el mismo tamaño de fuente */
+    padding: 10px 0; /* Ajusta el padding para un tamaño consistente */
+    width: 100%; /* Asegura que los enlaces ocupen el ancho disponible */
+}
+
+        .hero-section {
+    background-image: url("img/Fotter\ Nuevo\ amanecer\ 1.png"); /* Asegúrate de que la ruta de la imagen es correcta */
+    background-size: cover; /* La imagen cubrirá toda la sección */
+    background-position: center; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Usa el 100% de la altura visible de la ventana */
+    overflow-x: hidden; /* Previene que se muestre el scroll horizontal */
+    position: relative;
+}
+
+
+
+        .section-title {
+            color: #333;
+            font-weight: bold;
+        }
+        .contact-info {
+            background-color: #c0a080;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .service-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .repertoire-select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .text-justify{
+            text-align: justify;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #c0a080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #e0d0b0;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .navbar-main {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    max-height: 80px; /* Ajusta el tamaño del logo */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex; /* Asegura que los elementos estén alineados correctamente */
+    gap: 10px; /* Ajusta la separación entre los elementos del menú */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em; /* Ajusta el espaciado entre letras */
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px; /* Reduce el padding lateral para reducir separación */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a65e28;
+}
+.brand-title img {
+    max-width: 500px; /* Puedes ajustar el tamaño según lo que necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.custom-hr {
+    border: 0;
+    height: 1px; /* Ajusta el grosor de la línea */
+    background: #555; /* Color de la línea */
+    width: 100%; /* Puedes ajustar el ancho según lo que necesites */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Para añadir sombra sutil como en la imagen */
+    margin: 20px 0; /* Espacio superior e inferior de la línea */
+}
+
+.section-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .repertoire-select {
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      appearance: none;
+      background-color: white;
+      background-image: url('img/Arrow_down.png'); /* Asegúrate de que el ícono sea correcto */
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    .repertoire-select option {
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+
+    /* Ajuste visual similar al de la imagen */
+    .select-wrapper {
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .section-content {
+      text-align: center;
+    }
+    .submit-btn {
+    background-color: #c58c5a; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Padding alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto y el ícono */
+}
+
+.submit-btn:hover {
+    background-color: #a6754a; /* Color al hacer hover */
+    cursor: pointer; /* Cursor en forma de mano al pasar el mouse */
+}
+
+  </style>
+ </head>
+ <body>
+
+<!-- Header Top -->
+<div class="header-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center px-4"> <!-- Cambié a container-fluid y añadí padding -->
+        <!-- Left Side: Teléfono -->
+        <div class="left-side">
+            <a href="tel:5561603335" class="d-flex align-items-center mt-4">
+                <i class="fas fa-phone fa-lg"></i> 
+                <span class="ms-2 fs-4 text-style-1">5561603335</span>
+            </a>
+        </div>
+        
+        <!-- Imagen centrada (logo) -->
+        <div class="brand-title text-center">
+            <img src="../figma practice/img/image 20.png" alt="logo" class="img-fluid">        
+        </div>
+
+        <!-- Right Side: Contacto -->
+        <div class="right-side">
+            <a href="#" class="d-flex align-items-center mt-4">
+                <i class="fas fa-envelope fa-lg"></i> 
+                <span class="ms-2 fs-4 text-style-1">Contáctanos</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Main -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-main">
+    <div class="container">
+     <a class="navbar-brand" href="#">
+        <img src="../figma practice/img/logoBlancoyNegro 1.png" alt="logo" class="img-fluid">
+     </a>
+     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+       <li class="nav-item">
+        <a class="nav-link text-style-2" href="#inicio">Inicio</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-style-2" href="#sobre-nosotros">Sobre nosotros</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-style-2" href="#servicios">Servicios</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-style-2" href="#paquetes">Paquetes</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-style-2" href="#repertorio">Repertorio</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link text-style-2" href="#galeria">Galería</a>
+       </li>
+      </ul>
+     </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<main>
+    <section class="hero-section container-fluid">
+        <button class="contact-button">
+            <i class="fas fa-phone"></i> CONTACTO <i class="fab fa-whatsapp"></i>
+        </button>
+    </section>
+       
+   <div class="container mt-5">
+    <section id="sobre-nosotros">
+     <h2 class="section-title">
+      Sobre Nosotros
+     </h2>
+     <div class="row">
+      <div class="col-md-8">
+        <p class="text-justify">
+            En <strong>Mariachi Nuevo Amanecer</strong>, llevamos la auténtica tradición de la música mexicana a cada rincón de <strong>CDMX</strong> y <strong>EDOMEX</strong> con pasión, calidad y compromiso. Nuestro grupo destaca por su profesionalismo y una larga trayectoria en eventos que van desde bodas, serenatas, y eventos corporativos, hasta fiestas privadas y celebraciones especiales.
+         
+            Lo que nos diferencia de otros mariachis es nuestra dedicación a ofrecer una experiencia musical inolvidable. No solo interpretamos canciones; conectamos con la audiencia y creamos momentos que perduran en la memoria. Cada presentación está cuidadosamente adaptada a las necesidades de nuestros clientes, asegurándonos de capturar la esencia de su evento y darle un toque único y especial.
+         
+            Ya sea que estés buscando amenizar un evento íntimo o realizar una gran celebración, <strong>Mariachi Nuevo Amanecer</strong> está aquí para hacer que cada nota resuene en el corazón de tus invitados. Contamos con un repertorio amplio que abarca lo mejor de la música tradicional mexicana y estamos listos para ofrecerte un servicio personalizado que hará de tu evento algo extraordinario.
+         </p>
+         
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <img alt="Mariachi Nuevo Amanecer logo en CDMX y EDOMEX" class="img-fluid" height="200" src="../figma practice/img/logo 1.png" width="300"/>
+            </div>
+            <div class="col-md-12">
+                <img alt="Mariachi Nuevo Amanecer logo en CDMX y EDOMEX" class="img-fluid" height="200" src="../figma practice/img/image 14.png" width="300"/>
+            </div>
+        </div>
+      </div>
+     </div>
+    </section>
+ 
+    <hr class="custom-hr">
+
+    <section class="mt-5" id="servicios">
+     <div class="row">
+        <div class="col-md-12 row">
+            <div class="col-md-6">
+                <img alt="Mariachi tocando en una boda en CDMX" class="img-fluid mb-3" height="300" src="img/image 15.png" width="400"/>
+              </div>
+              <div class="col-md-6">
+                <h3>Servicios CDMX</h3>
+                <ul class="service-list">
+                 <li>1. Cumpleaños</li>
+                 <li>2. Serenata</li>
+                 <li>3. Bodas (civil)</li>
+                 <li>4. Aniversarios</li>
+                 <li>5. Bodas</li>
+                 <li>6. XV años</li>
+                 <li>7. Cualquier A. Masivo</li>
+                </ul>
+                <p>Y muchos más...</p>
+              </div>
+        </div>
+      <div class="col-md-12 row">
+        <div class="col-md-6">
+            <h3>Servicios EDOMEX</h3>
+            <ul class="service-list">
+             <li>1. Serenatas en Metepec</li>
+             <li>2. Aniversarios</li>
+             <li>3. Bodas (civil)</li>
+             <li>4. XV años</li>
+             <li>5. Cumpleaños</li>
+             <li>6. Graduaciones</li>
+             <li>7. Fiestas en Zinacantepec</li>
+            </ul>
+            <p>Y muchos más...</p>
+        </div>
+        <div class="col-md-6">
+            <img alt="Mariachi tocando en un evento en EDOMEX" class="img-fluid mb-3" height="300" src="img/image 16.png" width="400"/>
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <hr class="custom-hr">
+
+    <section class="mt-5" id="paquetes">
+     <h2 class="section-title">Paquetes</h2>
+     <div class="row">
+      <div class="col-md-6">
+       <div class="card">
+    <div class="card-body">
+        <img src="img/image 17.png" alt="paquete" class="img-fluid">
+    </div>   
+    </div>
+      </div>
+      <div class="col-md-6">
+       <div class="card">
+        <div class="card-body">
+            <img src="img/image 19.png" alt="paquete" class="img-fluid">
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <hr class="custom-hr">
+
+    <section class="mt-5" id="repertorio">
+        <div class="section-content">
+          <h2 class="section-title">Repertorio</h2>
+          <p>Explora nuestro repertorio de canciones y selecciona tus favoritas para tu evento. Tenemos música para cada ocasión.</p>
+    
+          <div class="select-wrapper">
+            <label for="repertoire-select">Filtrar por Artista:</label>
+            <select id="repertoire-select" class="repertoire-select">
+              <option value="" disabled selected>Filtrar por Artista</option>
+              <option value="todos">Todos</option>
+              <option value="vicente">Vicente Fernández</option>
+              <option value="jose-alfredo">José Alfredo Jiménez</option>
+              <option value="pedro-infante">Pedro Infante</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-hr">
+
+    <section class="mt-5" id="contactanos">
+     <h2 class="section-title">Contáctanos</h2>
+     <p>Para más información o reservas, puedes contactarnos a través del siguiente formulario o directamente en el botón de WhatsApp para mensajes directos.</p>
+     <form class="contact-form">
+      <input placeholder="Nombre:" type="text"/>
+      <input placeholder="Correo electrónico:" type="email"/>
+      <textarea placeholder="Mensaje:" rows="4"></textarea>
+      <button type="submit" class="submit-btn">Enviar <i class="fas fa-arrow-right"></i></button>
+    </form>
+     <a href="https://wa.me/5581603335" target="_blank" class="btn btn-success mt-3">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>    
+    </section>
+   </div>
+  </main>
+
+  <hr class="custom-hr">
+
+<!-- Sección de Galería con Carrusel -->
+<section id="galeria">
+    <h2 class="section-title text-center">Galería</h2>
+    <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/DALL·E 2024-09-08 17.55.06 - A vibrant scene of a mariachi band performing at an elegant outdoor event, wearing traditional charro outfits with sombreros. The background features .webp" class="d-block w-100" alt="Galería 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/DALL·E 2024-09-08 17.55.14 - A lively mariachi band performing at a wedding ceremony, with elegant white and gold decor. The musicians wear traditional charro outfits and play var.webp" class="d-block w-100" alt="Galería 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/DALL·E 2024-09-08 17.55.18 - A colorful mariachi band performing at a lively street festival, surrounded by a joyful crowd. The musicians are playing guitars, trumpets, and violin.webp" class="d-block w-100" alt="Galería 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/DALL·E 2024-09-08 17.55.23 - A Mariachi band performing in a luxurious ballroom with grand chandeliers and elegant decor. The musicians, wearing traditional charro outfits, play a.webp" class="d-block w-100" alt="Galería 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/DALL·E 2024-09-08 17.55.28 - A lively mariachi band performing on a scenic terrace with a beautiful sunset in the background. The musicians are wearing traditional charro suits wi.webp" class="d-block w-100" alt="Galería 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/DALL·E 2024-09-08 17.55.39 - A festive mariachi band performing in a vibrant outdoor plaza, with musicians playing trumpets, violins, and guitars. The scene is filled with Mexican.webp" class="d-block w-100" alt="Galería 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+<!-- Footer con redes sociales -->
+<footer class="footer">
+    <div class="container">
+        <img src="img/logoBlancoyNegro 2.png" alt="logo" class="img-fluid">
+        <p>© 2024 Mariachi Nuevo Amanecer. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>Para más información, contáctanos en: <strong>5561603335</strong></p>
+    </div>
+</footer>
+  
+  <script crossorigin="anonymous" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+<script>
+    // Hacer que el botón de contacto flote mientras el usuario hace scroll
+    window.addEventListener('scroll', function() {
+        const contactButton = document.querySelector('.contact-button');
+        contactButton.style.bottom = '20px';  // Ajustar posición si se necesita
+    });
+</script>
+ </body>
+</html>
