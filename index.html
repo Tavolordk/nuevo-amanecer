@@ -231,10 +231,22 @@
 .navbar-nav .nav-link:hover {
     color: #a65e28;
 }
-.brand-title img {
-    width: 500px; /* Puedes ajustar el tamaño según lo que necesites */
-    height: auto; /* Mantiene la proporción de la imagen */
+/* Estilos para escritorio */
+@media (min-width: 992px) {
+    .brand-title img {
+        max-width: 500px; /* Tamaño de la imagen en pantallas de escritorio */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
 }
+
+/* Estilos para tablets y móviles */
+@media (max-width: 991px) {
+    .brand-title img {
+        max-width: 100%; /* La imagen ocupará el 100% del ancho disponible en pantallas más pequeñas */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+
 
 .custom-hr {
     border: 0;
