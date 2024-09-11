@@ -506,10 +506,12 @@ display: none;
     <section class="mt-5" id="contactanos">
      <h2 class="section-title">Contáctanos</h2>
      <p>Para más información o reservas, puedes contactarnos a través del siguiente formulario o directamente en el botón de WhatsApp para mensajes directos.</p>
-     <form class="contact-form">
-      <input placeholder="Nombre:" type="text"/>
-      <input placeholder="Correo electrónico:" type="email"/>
-      <textarea placeholder="Mensaje:" rows="4"></textarea>
+     <form class="contact-form"   action="https://formspree.io/f/mblrejyj"
+     method="POST">
+      <input placeholder="Nombre:" type="text" name="nombre"/>
+      <input placeholder="Teléfono:" type="number" name="telefono"/>
+      <input placeholder="Correo electrónico:" type="email" name="email"/>
+      <textarea placeholder="Mensaje:" rows="4" name="mensaje"></textarea>
       <button type="submit" class="submit-btn">Enviar <i class="fas fa-arrow-right"></i></button>
     </form>
      <a href="https://wa.me/5581603335" target="_blank" class="btn btn-success mt-3">
