@@ -313,11 +313,62 @@ display: none;
     background-color: #a6754a; /* Color al hacer hover */
     cursor: pointer; /* Cursor en forma de mano al pasar el mouse */
 }
+/* Ocultar el contenido por defecto */
+#contenido {
+    display: none;
+}
+
+/* Preloader ocupa toda la pantalla */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Para apilar la imagen y el texto verticalmente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Animación de rotación del logo */
+#logo-preloader {
+    animation: girarLogo 2s linear infinite;
+    width: 200px;  /* Ajusta el tamaño según lo que quieras */
+    height: 200px;
+}
+
+/* Estilos del texto debajo del logo */
+#preloader-text {
+    margin-top: 20px; /* Espacio entre el logo y el texto */
+    font-size: 16px;  /* Tamaño de fuente ajustable */
+    color: #333;      /* Color del texto */
+    text-align: center;
+}
+
+
+/* Animación de rotación del logo */
+@keyframes girarLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
   </style>
- </head>
+<link rel="icon" href="img/icono.ico" type="image/x-icon">
+</head>
  <body>
-
+<!-- Preloader -->
+<div id="preloader">
+    <img id="logo-preloader" src="img/icono.png" alt="Logo">
+    <p id="preloader-text">© 2024 Mariachi Nuevo Amanecer. Todos los derechos reservados.</p>
+</div>
+<div id="contenido">
 <!-- Header Top -->
 <div class="header-top">
     <div class="container-fluid d-flex justify-content-between align-items-center px-4">
@@ -567,6 +618,7 @@ display: none;
         <p>Para más información, contáctanos en: <strong>5561603335</strong></p>
     </div>
 </footer>
+</div>
   
   <script crossorigin="anonymous" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
   </script>
@@ -576,6 +628,16 @@ display: none;
         const contactButton = document.querySelector('.contact-button');
         contactButton.style.bottom = '20px';  // Ajustar posición si se necesita
     });
+    window.onload = function() {
+    // Agregar un retraso de 2 segundos (2000 ms) antes de ocultar el preloader
+    setTimeout(function() {
+        // Esconder el preloader
+        document.getElementById('preloader').style.display = 'none';
+        
+        // Mostrar el contenido principal
+        document.getElementById('contenido').style.display = 'block';
+    }, 2000); // 2000 ms = 2 segundos, puedes ajustar este valor para más o menos tiempo
+};
 </script>
  </body>
 </html>
